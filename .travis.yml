@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t lharo/reatawsci-cd -f Dockerfile.dev .
 script:
-  - docker run -e CI=true lharo/ReatAWSCI-CD npm run test
+  - docker run -e CI=true lharo/reatawsci-cd npm run test
