@@ -3,6 +3,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t lharo/ReatAWSCI-CD -f Dockerfile.dev .
+  - docker build -t lharo/reatawsci-cd -f Dockerfile.dev .
 script:
   - docker run -e CI=true lharo/ReatAWSCI-CD npm run test
